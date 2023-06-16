@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
-* main : Entry point.
+* main : a program that prints "Programming is like building a
+* multilingual puzzle
 *
-* description - prints: "Programming is like building a multilingual puzzle
-*
-* @return 0 on successful execution, non-zero value on error
+* return: "Programming is like building a multilingual puzzle
 */
 int main(void)
 {
