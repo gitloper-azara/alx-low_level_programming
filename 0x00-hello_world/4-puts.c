@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
-* main : a program that prints "Programming is like building a
-* multilingual puzzle
+* main - A program that prints a line with puts function
 *
-* return: "Programming is like building a multilingual puzzle
+* Return: 0 (Success)
 */
 int main(void)
 {

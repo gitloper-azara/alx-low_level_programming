@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - A program that prints the size of various
+* computer size types
 *
-* Description - This program prints the size of various data
-* types on the computer it is compiled and run on
-*
-* Return - 0 on successful execution
+* Return: 0 (Success)
 */
 
 int main(void)

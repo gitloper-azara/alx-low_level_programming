@@ -1,13 +1,9 @@
 #include <stdio.h>
 
-
 /**
- * main: Program entry point
+ * main - A program that prints a line using printf function
  *
- * initial short description: prints 'with proper grammar, but the outcome
- * is a piece of art,'
- *
- * Return: 0 on succesful execution
+ * Return: 0 (Success)
  */
 int main(void)
 {
