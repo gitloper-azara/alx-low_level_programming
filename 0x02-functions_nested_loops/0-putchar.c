@@ -20,8 +20,6 @@ int main(void)
 }
 
 /**
- * _putchar - this function prints a character
- *
  * @c: the character to be printed
  *
  * Description: prints the specified character
