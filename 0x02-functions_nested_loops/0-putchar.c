@@ -19,14 +19,6 @@ int main(void)
 	return (0);
 }
 
-/**
- * @c: the character to be printed
- *
- * Description: prints the specified character
- * to stdout
- *
- * Return: 0 (Success)
- */
 int _putchar(char c)
 {
 	write(1, &c, 1);
