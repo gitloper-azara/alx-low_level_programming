@@ -3,4 +3,5 @@
 2. This program prints x10 the alphabets in lower case, to a new line.
 3. This program (function) checks for lowercase character from given input.
 4. This program (function) checks for uppercase or lowercase characters.
-5. 
+5. This program (function) prints the sign associated to a given number.
+6. 
