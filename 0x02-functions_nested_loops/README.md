@@ -4,4 +4,5 @@
 3. This program (function) checks for lowercase character from given input.
 4. This program (function) checks for uppercase or lowercase characters.
 5. This program (function) prints the sign associated to a given number.
-6. 
+6. This program (function) computes the absolute value of an integer.
+7.
