@@ -6,4 +6,5 @@
 5. This program (function) prints the sign associated to a given number.
 6. This program (function) computes the absolute value of an integer.
 7. This program (function) prints the last digit of a number.
-8.
+8. This program (function) prints every minute of the day of Jack Bauer. starting from 00:00 to 23:59
+9. 
