@@ -9,4 +9,4 @@
 8. This program (function) prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
 9. This program (function) prints the 9 times table, starting with 0.
 10. This program (function) prints the sum of two integers.
-11.
+11. This program (function) prints all natural numbers from n to 98, followed by a new line.
