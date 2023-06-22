@@ -8,12 +8,12 @@
 
 void print_most_numbers(void)
 {
-	char c = 0;
+	char c;
 
-	if ((c >= 48 && c <= 57) !(c == 50 && c == 52))
+	for (c = 48; c <= 57; c++)
 	{
+	if !(c == 50 || c == 52)
 		_putchar(c);
 	}
-	else
-		return (0);
+	_putchar('\n');
 }
