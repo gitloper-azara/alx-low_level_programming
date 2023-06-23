@@ -5,14 +5,14 @@
  * @n: inputs integer
  */
 
-void print_numbers(int n)
+void print_number(int n)
 {
 	unsigned int i = n;
 
 	if (n < 0)
 	{
 		_putchar(45);
-		i = -i;
+		i = -n;
 	}
 	if (i / 10)
 	{
