@@ -3,6 +3,7 @@
 /**
  * print_number - prints an integer
  * @n: inputs integer
+ * Return: void
  */
 
 void print_number(int n)
@@ -18,5 +19,5 @@ void print_number(int n)
 	{
 		print_number(i / 10);
 	}
-	_putchar((i % 10) + '0');
+	_putchar((unsigned int) n % 10 + '0');
 }
