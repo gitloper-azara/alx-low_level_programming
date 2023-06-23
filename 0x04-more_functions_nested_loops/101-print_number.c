@@ -5,7 +5,7 @@
  * @n: inputs integer
  */
 
-void print_number(int n)
+void print_numbers(int n)
 {
 	unsigned int i = n;
 
