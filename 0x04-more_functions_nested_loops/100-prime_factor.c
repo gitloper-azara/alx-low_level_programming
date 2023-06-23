@@ -3,7 +3,6 @@
 
 /**
  * main - prints the largest prime factor
- * @n: number to check
  * Return: 0
  */
 
