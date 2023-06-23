@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,13 +7,21 @@
 
 int main(void)
 {
-	unsigned long int i, n = 612852475143;
+	long int prime = 612852475143;
+	long int quotient = prime;
+	long int divisor = 2;
 
-	for (i = 3; i < 782849; i = i + 2)
+	while (quotient != divisor)
 	{
-		while ((n % i == 0) && (n != i))
-			n = n / i;
+		if (quotient % divisor == 0)
+		{
+			quotient = quotient / divisor;
+		}
+		else
+		{
+			divisor++;
+		}
 	}
-	printf("%lu\n", n);
+	printf("%li\n", quotient);
 	return (0);
 }
