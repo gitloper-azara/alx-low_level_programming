@@ -6,18 +6,16 @@
  * Return: char
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
 	int i;
 	i = 0;
 
-	while (str[i])
+	while (*(s + i))
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-		{
-			str[i] -= 32;
-			i++;
-		}
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
+		i++;
 	}
 	return (s);
 }
