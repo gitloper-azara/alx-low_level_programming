@@ -7,7 +7,7 @@
  * @haystack: main string.
  *
  * Return: pointer to the beginning of the loacted substring or NULL if the
-substring is not found.
+ * substring is not found.
 */
 
 char *_strstr(char *haystack, char *needle)
