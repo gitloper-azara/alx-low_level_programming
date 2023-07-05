@@ -8,7 +8,7 @@
  * Return: number of bytes in the segment (accept)
  */
 
-unsigned int _strspn(char *s, char *accpet)
+unsigned int _strspn(char *s, char *accept)
 {
 	int z = 0;
 	int x;
