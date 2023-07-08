@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	{
 		char *z;
 		int num = strtol(argv[i], &z, 10);
+
 		if (*z != '\0')
 		{
 			printf("Error\n");
