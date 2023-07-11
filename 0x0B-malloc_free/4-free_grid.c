@@ -3,8 +3,8 @@
 
 /**
  * free_grid - frees a 2D grid previously created
- * @grid - the grid to free
- * @height - parameter to check
+ * @grid: pointer to a grid
+ * @height: no. of rows in the grid
  *
  * Return: void
  */
