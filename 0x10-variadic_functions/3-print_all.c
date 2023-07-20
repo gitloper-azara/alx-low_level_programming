@@ -10,6 +10,7 @@
 void print_char(va_list ap)
 {
 	char ch = va_arg(ap, int);
+
 	printf("%c", ch);
 }
 
@@ -20,6 +21,7 @@ void print_char(va_list ap)
 void print_int(va_list ap)
 {
 	int num = va_arg(ap, int);
+
 	printf("%d", num);
 }
 
@@ -31,6 +33,7 @@ void print_int(va_list ap)
 void print_float(va_list ap)
 {
 	double num = va_arg(ap, double);
+
 	printf("%f", num);
 }
 
@@ -42,6 +45,7 @@ void print_float(va_list ap)
 void print_string(va_list ap)
 {
 	char *str = va_arg(ap, char *);
+
 	if (str == NULL)
 		printf("(nil)");
 	else
@@ -73,6 +77,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		int j = 0;
+
 		while (ops[j].c)
 		{
 			if (format[i] == ops[j].c)
