@@ -69,9 +69,6 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 
-	char *separator_1 = "";
-	char *separator_2 = ", ";
-
 	va_start(ap, format);
 
 	while (format != NULL && format[i] != '\0')
@@ -82,9 +79,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == ops[j].c)
 			{
-				printf("%s", separator_1);
 				ops[j].f(ap);
-				separator_1 = separator_2;
+				if (format[i + 1] != '\0')
+					printf(", ");
+			        break;
 			}
 			j++;
 		}
