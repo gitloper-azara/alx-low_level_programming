@@ -66,6 +66,8 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 
+	char *separator = "";
+
 	va_start(ap, format);
 
 	while (format && format[i])
@@ -75,9 +77,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == ops[j].c)
 			{
+				printf("%s", separator);
 				ops[j].f(ap);
-				if (format[i + 1])
-					printf(", ");
+				separator = ", ";
 				break;
 			}
 			j++;
