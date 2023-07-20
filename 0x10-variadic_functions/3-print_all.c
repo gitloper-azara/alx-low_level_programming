@@ -70,21 +70,22 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 
-	char *separator = "";
+	char *separator_1 = "";
+	char *separator_2 = ", ";
 
 	va_start(ap, format);
 
-	while (format && format[i])
+	while (format != NULL && format[i] != '\0')
 	{
 		int j = 0;
 
-		while (ops[j].c)
+		while (ops[j].c != '\0')
 		{
 			if (format[i] == ops[j].c)
 			{
-				printf("%s", separator);
+				printf("%s", separator_1);
 				ops[j].f(ap);
-				separator = ", ";
+				separator_1 = separator_2;
 				break;
 			}
 			j++;
