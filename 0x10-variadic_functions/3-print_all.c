@@ -45,11 +45,10 @@ void print_float(va_list ap)
 void print_string(va_list ap)
 {
 	char *str = va_arg(ap, char *);
-	char *separator = "";
 
 	if (str == NULL)
 		printf("(nil)");
-	printf("%s%s", separator, str);
+	printf("%s", str);
 }
 
 /**
