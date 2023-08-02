@@ -10,8 +10,8 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	/* declare a new_node pointer */
-	listint_t *new_node;
+	/* declare a add_node pointer */
+	listint_t *add_node;
 
 	/* handle NULL head pointer */
 	if (head == NULL)
@@ -19,23 +19,23 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	}
 
-	/* dynamically allocate memory to new_node */
-	new_node = malloc(sizeof(listint_t));
+	/* dynamically allocate memory to add_node */
+	add_node = malloc(sizeof(listint_t));
 
 	/* handle memory allocation failure */
-	if (new_node == NULL)
+	if (add_node == NULL)
 	{
 		return (NULL);
 	}
 
-	/* assign the value of 'n' to new_node */
-	new_node->n = n;
+	/* assign the value of 'n' to add_node */
+	add_node->n = n;
 
-	/* make new_node point to the current head of the list */
-	new_node->next = *head;
+	/* make add_node point to the current head of the list */
+	add_node->next = *head;
 
-	/* update the head of the list to point to new_node */
-	*head = new_node;
+	/* update the head of the list to point to add_node */
+	*head = add_node;
 
-	return (new_node);
+	return (add_node);
 }
