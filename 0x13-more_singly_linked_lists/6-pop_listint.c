@@ -17,8 +17,10 @@ int pop_listint(listint_t **head)
 	int d = temp->n;
 
 	/* check if the list is empty */
-	if (*head == NULL)
+	if (*head == NULL || head == NULL)
+	{
 		return (0);
+	}
 
 	/* move the head pointer to the next node */
 	*head = (*head)->next;
