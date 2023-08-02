@@ -10,23 +10,26 @@
 
 int pop_listint(listint_t **head)
 {
-	/* create a temporary pointer to store the head node */
-	listint_t *temp = *head;
-
-	/* get the data(d) of the head node */
-	int d = temp->n;
+	listint_t *temp;
+	int d;
 
 	/* check if the list is empty */
 	if (*head == NULL || head == NULL)
 	{
 		return (0);
 	}
+	/* store the current head node */
+	temp = *head;
+
+	/* get the data (d) from the head node */
+	d = temp->n;
 
 	/* move the head pointer to the next node */
-	*head = (*head)->next;
+	*head = temp->next;
 
 	/* free the head node */
 	free(temp);
 
+	/* return the data (d) of the old head node */
 	return (d);
 }
