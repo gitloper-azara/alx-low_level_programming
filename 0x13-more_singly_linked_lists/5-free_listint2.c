@@ -10,6 +10,12 @@ void free_listint2(listint_t **head)
 	/* create a temporary pointer to store the current node */
 	listint_t *temp;
 
+	/* check if head is NULL */
+	if (head == NULL)
+	{
+		return;
+	}
+
 	/* loop through the list and free each node */
 	while (*head != NULL)
 	{
