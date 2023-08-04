@@ -11,7 +11,8 @@ void print_binary(unsigned long int n)
 {
 	/*
 	 * Base case: if n is greater than 1, recursively call
-	 * the function */
+	 * the function
+	 */
 	if (n > 1)
 		print_binary(n >> 1); /* Shift n right by one bit position */
 
