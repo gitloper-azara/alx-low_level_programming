@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	if (to_file == -1) /*check if file can't be created or writing fails */
 	{
 		close(from_file);
-		exit_on_error(99, "Error: Cant't write to file %s", argv[2],
+		exit_on_error(99, "Error: Cant't write to %s", argv[2],
 			-1);
 	}
 	/* read from source and write to destination */
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 		{
 			close(from_file);
 			close(to_file);
-			exit_on_error(99, "Error: Can't read from file %s",
+			exit_on_error(99, "Error: Can't write to %s",
 				      argv[2], -1);
 		}
 		} while (bytesREAD > 0);
