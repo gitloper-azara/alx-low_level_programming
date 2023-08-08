@@ -37,14 +37,14 @@ int main(int argc, char *argv[])
 	if (argv[2][0] == '\0') /* check if destination file is empty */
 	{
 		close(from_file);
-		exit_on_error(99, "Error: Can't write to file ", "", -1);
+		exit_on_error(99, "Error: Can't write to ", "", -1);
 	}
 	/* open the destination file for writing */
 	to_file = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (to_file == -1) /*check if file can't be created or writing fails */
 	{
 		close(from_file);
-		exit_on_error(99, "Error: Cant't write to %s", argv[2],
+		exit_on_error(99, "Error: Can't write to %s", argv[2],
 			-1);
 	}
 	/* read from source and write to destination */
