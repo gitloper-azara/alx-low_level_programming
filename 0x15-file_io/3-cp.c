@@ -4,6 +4,7 @@
  * exit_on_error - Print an error message and exit with a specific code
  * @code: The exit code
  * @message: The error message to print
+ * @filename: name of file related to the error
  * Return: Void
  */
 
@@ -41,7 +42,6 @@ int main(int argc, char *argv[])
 		close(from_file);
 		exit_on_error(99, "Error: Cant't write to file %s", argv[2]);
 	}
-
 	/* read from source and write to destination */
 	while ((bytesREAD = read(from_file, buffer, BUFFER_SIZE)) > 0)
 	{
@@ -54,18 +54,14 @@ int main(int argc, char *argv[])
 				argv[2]);
 		}
 	}
-
-	/* check for read error */
-	if (bytesREAD == -1)
+	if (bytesREAD == -1) /* check for read error */
 	{
 		close(from_file);
 		close(to_file);
 		exit_on_error(98, "Error: Can't read from file %s", argv[1]);
 	}
-
 	/* close file descriptors */
 	if (close(from_file) == -1 || close(to_file) == -1)
 		exit_on_error(100, "Error: Can't close fd", "");
-
 	return (0);
 }
