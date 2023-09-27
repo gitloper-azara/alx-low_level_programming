@@ -15,3 +15,6 @@ This function returns the factorial of a given number using recursion.
 
 ## 4. _pow_recursion();
 This function returns the value of x raised to the power of y using recursion.
+
+## 5. _sqrt_recursion();
+This function returns the natural square root of a number using recursion.
