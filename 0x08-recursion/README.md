@@ -9,3 +9,6 @@ This function prints a string in reverse.
 
 ## 2. _strlen_recursion();
 This function returns the length of a string using recursion.
+
+## 3. factorial();
+This function returns the factorial of a given number using recursion.
