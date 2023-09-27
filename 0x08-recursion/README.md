@@ -18,3 +18,7 @@ This function returns the value of x raised to the power of y using recursion.
 
 ## 5. _sqrt_recursion();
 This function returns the natural square root of a number using recursion.
+
+## 6. is_prime_number();
+This function returns 1 if the input integer is a prime number, otherwise it
+returns 0.
