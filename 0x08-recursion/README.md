@@ -21,4 +21,8 @@ This function returns the natural square root of a number using recursion.
 
 ## 6. is_prime_number();
 This function returns 1 if the input integer is a prime number, otherwise it
-returns 0.
+returns 0, using recursion.
+
+## 7. is_palindrome();
+This function returns 1 if a string is a palindrome and 0 if not, using
+recursion.
