@@ -13,3 +13,6 @@ Contains source code for a program that prints all arguments it receives.
 
 ## 3. 3-mul.c
 Contains source code for a program that multiplies two numbers on the cmd.
+
+## 4. 4-add.c
+COntains source code for a program that adds positive numbers.
