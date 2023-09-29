@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point of the program
- * @agrc: num of arguments
- * @argv: argument array
+ * main - Entry point of the program.
+ * @argc: num of argument count of the program.
+ * @argv: argument vector array.
  *
- * Return: 0 on success, error and -1 otherwise
+ * Return: 0 on success, error and 1 otherwise
  */
 
 int main(int argc, char *argv[])
