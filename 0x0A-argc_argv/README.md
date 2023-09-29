@@ -15,4 +15,8 @@ Contains source code for a program that prints all arguments it receives.
 Contains source code for a program that multiplies two numbers on the cmd.
 
 ## 4. 4-add.c
-COntains source code for a program that adds positive numbers.
+Contains source code for a program that adds positive numbers.
+
+## 5. 100-change.c
+Contains source code for a program that prints the number of coins to make
+change for an amount of money.
