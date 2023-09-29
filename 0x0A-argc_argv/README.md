@@ -10,3 +10,6 @@ into it *(argc)*.
 
 ## 2. 2-args.c
 Contains source code for a program that prints all arguments it receives.
+
+## 3. 3-mul.c
+Contains source code for a program that multiplies two numbers on the cmd.
