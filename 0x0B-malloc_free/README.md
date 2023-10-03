@@ -15,3 +15,7 @@ This function concatenates two strings.
 
 ## 3-alloc_grid.c
 This function returns a pointer to a 2-D array of integers.
+
+## 4-free_grid.c
+This function frees a 2-dimensional grid previously created by the alloc_grid
+function.
