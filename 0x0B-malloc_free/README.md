@@ -12,3 +12,6 @@ contains a copy of the string given as a parameter.
 
 ## 2-str_concat.c
 This function concatenates two strings.
+
+## 3-alloc_grid.c
+This function returns a pointer to a 2-D array of integers.
