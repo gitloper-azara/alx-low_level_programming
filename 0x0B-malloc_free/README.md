@@ -2,6 +2,10 @@
 
 This directory contains projects on memory allocation.
 
-## 0. char *create_array(unsigned int size, char c);
-This function prototype creates an array of chars, and initializes it with a
+## 0. 0-create_array.c
+This function creates an array of chars, and initializes it with a
 specific char.
+
+## 1-strdup.c
+This function returns a pointer to a newly allocated space in memory, which
+contains a copy of the string given as a parameter.
