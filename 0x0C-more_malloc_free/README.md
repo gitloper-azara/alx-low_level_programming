@@ -10,3 +10,6 @@ second string literal.
 
 ## 2. 2-calloc.c
 This function allocates memoery for an array, using malloc.
+
+## 3. 3-array_range.c
+This function creates an array of integers.
