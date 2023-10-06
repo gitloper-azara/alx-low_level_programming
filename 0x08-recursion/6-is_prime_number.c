@@ -1,44 +1,33 @@
 #include "main.h"
 
 /**
- * check_int - check to see if number is candidate for prime
- * @a: int
- * @b: int
+ * check_num - checks to see if integer is a prospect for being a prime number.
+ * @x: int.
+ * @y: int.
  *
- * Return: int
+ * Return: prospect.
  */
 
-int check_int(int a, int b)
+int check_num(int x, int y)
 {
-	if (b < 2 || b % a == 0)
-	{
+	if (y < 2 || y % x == 0)
 		return (0);
-	}
-	else if (a > b / 2)
-	{
+	else if (x > y / 2)
 		return (1);
-	}
 	else
-	{
-		return (check_int(b, a + 1));
-	}
+		return (check_num(x + 1, y));
 }
-
 /**
- * is_prime_number - returns a prime
- * @n: int
+ * is_prime_number - returns 1 if integer is a prime number, otherwise 0.
+ * @n: integer to check.
  *
- * Return: 1 if true, 0 if otherwise
+ * Return: 1 if int is a prime number, 0 if otherwise.
  */
 
 int is_prime_number(int n)
 {
 	if (n == 2)
-	{
 		return (1);
-	}
 	else
-	{
-		return (check_int(2, n));
-	}
+		return (check_num(2, n));
 }

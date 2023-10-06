@@ -2,23 +2,28 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point of the program
- * @agrc: argument count
- * @argv: argument vector
+ * main - Entry point of the program.
+ * @argc: num of argument count of the program.
+ * @argv: argument vector array.
  *
- * Return: 0 on success, error and -1 otherwise
+ * Return: 0 on success, error and 1 otherwise
  */
 
 int main(int argc, char *argv[])
 {
-	if (argc < 2 || argc > 3)
+	int x, y, z;
+
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-		return (0);
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
+		z = (x * y);
+		printf("%d\n", z);
 	}
+	return (0);
 }
