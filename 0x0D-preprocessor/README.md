@@ -12,3 +12,7 @@ This header file defines a macro named *PI* as an abbreviation for the token
 ## 2. File name
 This program prints the name of the file it was compiled from, followed by a
 new line.
+
+## 3. Function-like macro
+This header file defines a function-like macro *ABS(x)*, that computes the
+absolute value of a number *x*.
