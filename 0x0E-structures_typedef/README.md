@@ -15,3 +15,6 @@ This new type *dog_t* is defined as a new name for the type *struct_dog*.
 
 ## 4. new_dog();
 This function creates a new dog.
+
+## 5. free_dog();
+This function frees dogs.
