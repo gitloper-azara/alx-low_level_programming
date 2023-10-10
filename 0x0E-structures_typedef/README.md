@@ -9,3 +9,6 @@ This function initialises a variable of type *struct dog*.
 
 ## 2. print_dog();
 This function prints a *struct dog*.
+
+## 3. dog_t
+This new type *dog_t* is defined as a new name for the type *struct_dog*.
