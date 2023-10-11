@@ -8,3 +8,6 @@ This is a function that takes two arguments. A *string* and a
 ## 1. array_iterator()
 This function executes a function given as a parameter on each element of an
 array.
+
+## 2. int_index()
+This function searches for an integer.
