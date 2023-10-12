@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints a system's opcodes.
+ * main - prints its own opcodes.
  * @argc: argument count.
  * @argv: argument vector.
  *

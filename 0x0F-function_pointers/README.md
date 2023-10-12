@@ -27,3 +27,6 @@ user.
 ## 3. main.c
 Contains the *main* function that handles argc and argv errors and converts
 arguments to int. Handles the final part of the program.
+
+## 100-opcodes
+A program that prints the opcodes of its own main function.
