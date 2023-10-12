@@ -8,8 +8,8 @@
 void print_char(va_list args)
 {
 	char ch;
-	ch = va_arg(args, int);
 
+	ch = va_arg(args, int);
 	printf("%c", ch);
 }
 
@@ -21,34 +21,34 @@ void print_char(va_list args)
 void print_int(va_list args)
 {
 	int num;
-	num = va_arg(args, int);
 
+	num = va_arg(args, int);
 	printf("%d", num);
 }
 
 /**
- * print_int - prints int.
- * @args: int type argument list.
+ * print_float - prints float.
+ * @args: float type argument list.
  */
 
 void print_float(va_list args)
 {
 	double num;
-	num = va_arg(args, double);
 
+	num = va_arg(args, double);
 	printf("%f", num);
 }
 
 /**
- * print_int - prints int.
- * @args: int type argument list.
+ * print_string - prints string.
+ * @args: string type argument list.
  */
 
 void print_string(va_list args)
 {
 	char *str;
-	str = va_arg(args, char *);
 
+	str = va_arg(args, char *);
 	if (str == NULL)
 		printf("(nil)");
 	printf("%s", str);
