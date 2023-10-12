@@ -9,3 +9,6 @@ This function prints numbers, followed by a new line.
 
 ## 2. print_strings()
 This function prints strings, followed by a new line.
+
+## 3. print_all()
+This function prints anything.
