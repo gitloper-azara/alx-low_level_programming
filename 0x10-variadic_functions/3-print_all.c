@@ -68,10 +68,11 @@ void print_all(const char * const format, ...)
 	int i, j;
 
 	op_t ops[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string}
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
 	};
 
 	char *separator_1 = "";
@@ -82,14 +83,16 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-
-		while (j < 4 && (format[i] != ops[j].c))
-			j++;
-		if (j < 4)
+		while (j < 4)
 		{
-			printf("%s", separator_1);
-			ops[j].f(args);
-			separator_1 = separator_2;
+			if (*ops[j].c == format[i])
+			{
+				printf("%s", separator_1);
+				ops[j].f(args);
+				separator_1 = separator_2;
+				break;
+			}
+			j++;
 		}
 		i++;
 	}
