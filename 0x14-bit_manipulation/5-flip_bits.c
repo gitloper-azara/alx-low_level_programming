@@ -5,6 +5,8 @@
  * one number to another
  * @n: first num
  * @m: second num
+ *
+ * Return: number of bits needed
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
