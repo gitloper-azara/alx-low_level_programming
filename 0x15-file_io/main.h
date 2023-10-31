@@ -6,6 +6,7 @@
 #include <fcntl.h>
 #include <stdint.h>
 #include <string.h>
+#include <elf.h>
 
 #define ELF_MAGIC "\177ELF"
 
@@ -21,11 +22,11 @@ int append_text_to_file(const char *filename, char *text_content);
  * @e_entry: entry point virtual address
  */
 
-typedef struct Elf32
+typedef struct _Elf32_Ehdr
 {
 	unsigned char e_ident[16];
 	uint16_t e_type;
 	uint32_t e_entry;
-} Elf32_Ehdr;
+} _Elf32_Ehdr;
 
 #endif /* MAIN_H */
