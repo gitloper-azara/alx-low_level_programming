@@ -31,49 +31,44 @@ size_t dlistint_len(const dlistint_t *h)
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-    dlistint_t *temp;
-    unsigned int len;
-    unsigned int idx;
+	dlistint_t *temp;
+	unsigned int len;
+	unsigned int idx;
 
-    if (!head || !(*head))
-        return (-1);
-
-    len = dlistint_len(*head);
-    if (index >= len)
-        return (-1);
-
-    temp = *head;
-
-    if (index == 0)
-    {
-        *head = temp->next;
-        if (*head)
-            (*head)->prev = NULL;
-        free(temp);
-        return (1);
-    }
-
-    if (index == (len - 1))
-    {
-        while (temp->next)
-            temp = temp->next;
-        temp->prev->next = NULL;
-        free(temp);
-        return (1);
-    }
-
-    idx = 0;
-    while (temp)
-    {
-        if (idx == index)
-        {
-            temp->next->prev = temp->prev;
-            temp->prev->next = temp->next;
-            free(temp);
-            return (1);
-        }
-        temp = temp->next;
-        idx++;
-    }
-    return (-1);
+	if (!head || !(*head))
+		return (-1);
+	len = dlistint_len(*head);
+	if (index >= len)
+		return (-1);
+	temp = *head;
+	if (index == 0)
+	{
+		*head = temp->next;
+		if (*head)
+			(*head)->prev = NULL;
+		free(temp);
+		return (1);
+	}
+	if (index == (len - 1))
+	{
+		while (temp->next)
+			temp = temp->next;
+		temp->prev->next = NULL;
+		free(temp);
+		return (1);
+	}
+	idx = 0;
+	while (temp)
+	{
+		if (idx == index)
+		{
+			temp->next->prev = temp->prev;
+			temp->prev->next = temp->next;
+			free(temp);
+			return (1);
+		}
+		temp = temp->next;
+		idx++;
+	}
+	return (-1);
 }
