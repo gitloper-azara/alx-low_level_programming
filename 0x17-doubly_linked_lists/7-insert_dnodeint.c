@@ -24,16 +24,17 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	newNode->n = n;
 
 	currentNode = *h;
-	for (index = 0; currentNode->next && index < idx - 1; index++)
+	for (index = 0; currentNode && index < idx - 1; index++)
 		currentNode = currentNode->next;
-	if (!currentNode)
+	if (!currentNode && index < idx - 1)
 	{
 		free(newNode);
 		return (NULL);
 	}
 	newNode->next = currentNode->next;
 	newNode->prev = currentNode;
-	currentNode->next = newNode;
+	if (currentNode)
+		currentNode->next = newNode;
 	if (newNode->next)
 		newNode->next->prev = newNode;
 	return (newNode);
