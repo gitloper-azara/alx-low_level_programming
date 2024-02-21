@@ -1,26 +1,24 @@
 # declare variables
 CC = gcc
 SRC = main.c school.c
+OBJ = $(SRC:%.c=%.o)
 NAME = school
-RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # build the executable from object files
-all: ${NAME}
-
-${NAME}: ${SRC} m.h
-	${CC} ${CFLAGS} ${SRC} -o $@
+all: ${OBJ} m.h
+	${CC} ${OBJ} -o ${NAME}
 
 # clean emacs and vim temporary files along with executable
 clean:
-	${RM} *~ ${NAME}
+	-${RM} -f *~ ${NAME}
 
 # clean object files
 oclean:
-	${RM} *.o
+	-${RM} -f ${OBJ}
 
 # clean emacs and vim temporary files along with executable and object files
 fclean: clean oclean
 
 # force recompilation of all object files
-re: fclean all
+re: oclean all
