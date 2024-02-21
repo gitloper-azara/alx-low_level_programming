@@ -5,6 +5,9 @@ NAME = school
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+# rules
+.PHONY: all clean fclean oclean re
+
 # build the executable from object files
 all: ${NAME}
 
@@ -15,10 +18,12 @@ ${NAME}: ${SRC} m.h
 clean:
 	${RM} *~ ${NAME}
 
-# force recompilation of all object files
-re: clean all
+# clean object files
+oclean:
+	${RM} *.o
 
-# enforce header dependency for compilation
-.PHONY: all clean re
-m.h:  # Missing header dependency
-	${RM} *~ ${NAME}
+# clean emacs and vim temporary files along with executable and object files
+fclean: clean oclean
+
+# force recompilation of all object files
+re: fclean all
