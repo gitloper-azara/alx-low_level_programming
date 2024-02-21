@@ -1,7 +1,14 @@
+# ignore files with these extensions
 *.c
 *.out
 *.h
 *.o
+
+# files to be ignored
+5-main.py
+
+# directories and self-contents to be ignored
+__pycache__/
 
 # ignore executables
 school
