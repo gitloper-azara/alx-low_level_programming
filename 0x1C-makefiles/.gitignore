@@ -1,6 +1,7 @@
 *.c
 *.out
 *.h
+*.o
 
 # ignore executables
 school
