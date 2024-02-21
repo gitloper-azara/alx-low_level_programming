@@ -5,9 +5,6 @@ NAME = school
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# rules
-.PHONY: all clean fclean oclean re
-
 # build the executable from object files
 all: ${NAME}
 
